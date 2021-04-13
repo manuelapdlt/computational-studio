@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>COLKIDS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Avenir:400,400i,700">
+    <link rel="stylesheet" href=" https://fonts.google.com/specimen/Fredoka+One?thickness=7">
+    <link rel="stylesheet" href="https://use.typekit.net/zqx6wet.css">
+    <link id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+
+
+
+
+
+
+</head>
+<style>
+    :root {
+        /*   color variables */
+        --clr-primary: #FFC845;
+        --clr-primary-hover: #FFC845;
+        --clr-primary-dark: #FFC845;
+        --clr-gray100: #ffffff;
+        --clr-gray200: #cfd8dc;
+
+        /*   border radius */
+        --radius: 0rem;
+    }
+
+    
+    
+    *:after {
+        box-sizing: border-box;
+    }
+/*style of first page*/
+    body {
+        font-family: Avenir, sans-serif;
+        background-color: white;
+        height: 100%;
+        width: 100%;
+    }
+/*nagavation style*/
+    .nav-list {
+        background: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.04), 0 6px 20px 0 rgba(0, 0, 0, 0.06);
+        padding: 1rem 0;
+        border-radius: var(--radius);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .nav-item {
+        list-style: none;
+        margin-right: 2rem;
+    }
+
+    .nav-item a {
+        text-decoration: none;
+        color: #000000;
+        transition: all 200ms ease-in;
+
+
+    }
+
+    .nav-item a:hover {
+        color: #FFC845;
+    }
+
+    .nav-item:first-child {
+        margin-right: auto;
+        margin-left: 2rem;
+        font-weight: Bold;
+        font-size: 20px;
+    }
+
+
+
+
+/* get started button*/
+    .btn-primary {
+        font-family: Avenir, sans-serif;
+        font-size: 1rem;
+        background: var(--clr-primary);
+        border: none;
+        outline: none;
+        border-radius: 0.5rem;
+        padding: 0.5rem 1rem;
+        padding-top: 0.9em;
+        cursor: pointer;
+        transition: all 200ms ease-in;
+        color: #ffffff;
+        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.04), 0 2px 3px 0 rgba(0, 0, 0, 0.06);
+
+    }
+
+    .btn-primary:hover {
+        background: var(--clr-primary-hover);
+    }
+
+    /* indroducing COLKIDS*/
+    .main {
+
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        margin-bottom: 1.5em;
+        margin: 0.5em 0;
+        padding-right: 13em;
+        padding-left: 1.5em;
+        padding-top: 4em;
+        font-size: 30px;
+        font-family: bilo, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+
+
+    }
+
+/* Date on the botton right*/
+
+    .date {
+        padding-left: 123em;
+        padding-top: 20em;
+        font-size: 10px;
+        padding-bottom: 2em;
+        font-weight: lighter;
+    }
+    
+    /* The issue plus video*/
+
+    .about h2 {
+        font-family: bilo, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .about {
+        width: 100%;
+        height: 80vh;
+        background: #FFC845;
+        display: grid;
+
+
+
+    }
+/* Tittle "the issue*/
+    .left {
+        padding-right: 13em;
+        padding-left: 1.5em;
+        padding-top: 4em;
+        font-size: 30px;
+        font-family: bilo, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+
+        order: 1;
+        flex: 1;
+        padding-top: 0.1em;
+        font-size: 90px;
+        padding-left: 0.6em;
+        font-size: 50px;
+        font-weight: bolder;
+
+    }
+/* Video/* Tittle "the issue*/
+
+
+    .right {
+        order: 3;
+        flex: 1;
+        padding-bottom: 5em;
+        margin-left: 20rem;
+        -webkit-filter: drop-shadow(0px 3px 6px #5f5f5f);
+        filter: drop-shadow(0px 3px 6px #bf8700);
+    }
+
+
+
+
+/* Explanation of our goal*/
+
+
+    .goal {
+        width: 100%;
+        height: 97vh;
+        background: #ffffff;
+        display: grid;
+        font-size: 30px;
+        padding-top: 10EM;
+        text-align: center;
+        padding-bottom: 10em;
+        font-family: bilo, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        color: #FFC845;
+    }
+/* Explaning how the donations would be used*/
+
+    .breakdown {
+        width: 100%;
+        height: 20vh;
+        background: #FFC845;
+        display: grid;
+        text-align: right;
+        font-size: 50px;
+        font-weight: bolder;
+        padding-right: 0.5em;
+        padding-top: 0.2em;
+        font-family: bilo, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+
+    }
+
+
+
+
+/* testimoials*/
+    .wrapper-grid {
+        padding-top: 8em;
+        grid-template-columns: minmax(200px, 1fr);
+        grid-gap: 2rem;
+        justify-content: center;
+        background-color: #FFC845;
+        padding-left: 5em;
+        padding-right: 5em;
+        padding-bottom: 10em;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container {
+        overflow: hidden;
+        box-shadow: 0px 2px 20px;
+        color: grey;
+        background: white;
+        border-radius: 0.5rem;
+        position: relative;
+        width: 450px;
+        margin: 1rem;
+        transition: 250ms all ease-in-out;
+        cursor: pointer;
+
+    }
+
+    .container:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 2px 40px;
+        color: grey;
+    }
+
+
+    .profile-img {
+        width: 8rem;
+        margin-top: 0.5rem;
+
+
+    }
+
+
+
+    .name {
+        font-weight: bolder;
+        font-size: 1rem;
+        text-align: left;
+        padding-left: 2em;
+        color: black;
+    }
+
+    .description {
+        margin: 1rem 2rem;
+        font-size: 0.9rem;
+        text-align: left;
+    }
+
+    .wrapper-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    .help {
+
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        padding-top: 10em;
+        padding-bottom: 8em;
+        color: #000000;
+        font-size: 30px;
+        font-family: bilo, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+
+
+    }
+
+
+
+
+    .wrapper-grid2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 25rem);
+        justify-content: center;
+        font-size: 50px;
+        text-align: center;
+        padding-top: 1em;
+
+    }
+
+    .change {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        margin-bottom: 1.5em;
+        margin: 0.5em 0;
+        padding-left: 1.5em;
+        padding-top: 4em;
+        font-size: 30px;
+        font-family: bilo, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        text-align: center;
+
+    }
+
+
+    .container2 {
+        overflow: hidden;
+        box-shadow: 0px 2px 8px 0px;
+        color: lightgray;
+        background-color: white;
+        text-align: center;
+        border-radius: 1rem;
+        position: relative;
+        margin: 0.5rem;
+        margin-bottom: 8em;
+
+    }
+
+
+
+
+
+    .profile-img2 {
+        width: 15rem;
+        clip-path: circle(60px at center);
+        margin-top: 1.5rem;
+
+
+    }
+
+    .name2 {
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: black;
+    }
+
+    .description2 {
+        margin: 1rem 2rem;
+        font-size:0.9rem;
+        color: black;
+        margin-bottom: 5rem;
+
+    }
+
+    h6 {
+        text-align: center;
+        width: 100%;
+        height: vh;
+        font-family: Avenir, sans-serif;
+        font-size: 50px;
+        font-weight: bolder;
+        padding-right: 0.5em;
+        padding-top: 2em;
+
+    }
+
+    .form {
+        margin-top: 10em;
+        margin-left: 8em;
+        padding: 2rem;
+        border-radius: 1rem;
+        background-color: white;
+        box-shadow: 0px 2px 8px 0px;
+        color: lightgray;
+        margin-right: 10em;
+
+    }
+
+    .form__title {
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+        color: black;
+        margin-left: 25rem;
+        font-size: 40px;
+
+
+    }
+
+    .form__title2 {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        color: black;
+        margin-left: 0.5rem;
+        margin-right: 25rem;
+        font-size: 20px;
+
+
+    }
+
+
+    .form__group {
+        position: relative;
+        height: 3rem;
+        margin-bottom: 5rem;
+        margin-left: 25rem;
+
+    }
+
+
+    .form__input {
+        width: 100%;
+        height: 100%;
+        border: 1px solid grey;
+        border-radius: 0.5rem;
+        font-family: inherit;
+        font-weight: inherit;
+        color: inherit;
+        outline: none;
+        padding: 1.25rem;
+        background: #ffffff;
+        margin-left: auto;
+
+    }
+
+    .from__input:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 2px 40px;
+        color: grey;
+        margin-left: auto;
+
+    }
+
+
+    .form__label {
+        position: absolute;
+        left: 1rem;
+        top: 0.9rem;
+        padding: 0 0.5rem;
+        background-color: white;
+        transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+        margin-left: auto;
+    }
+
+    .form__button {
+        display: block;
+        margin-left: auto;
+        padding: 0.75rem 2rem;
+        background-color: mediumpurple;
+        font-family: inherit;
+        font-weight: inherit;
+        border-radius: 0.5rem;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        color: aliceblue;
+        font-family: bilo, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+
+    }
+
+    .form__input:focus~.form__label,
+    .form__input:focus~.form__label,
+    .form__input:not(:placeholder-shown).form__input:not(:focus)~.form__label {
+        top: -1rem;
+        left: 0.8rem;
+        font-size: 0.8rem;
+        color: white;
+    }
+
+    .illustration {
+        -webkit-filter: drop-shadow(0px 3px 6px #c7c7c7);
+        filter: drop-shadow(0px 3px 6px #cbcbcb);
+        width: 300px;
+        height: 370px;
+        margin-bottom: 6rem;
+        float: left;
+    }
+
+
+    .form2 {
+        margin-top: 10em;
+        margin-left: 8em;
+        padding: 2rem;
+        border-radius: 1rem;
+        background-color: white;
+        box-shadow: 0px 2px 8px 0px;
+        color: lightgray;
+        margin-right: 10em;
+        margin-bottom: 10rem;
+        padding-bottom: 5em;
+    }
+
+    .link {
+        width: 350px;
+        height: 10px;
+        border: 1px solid grey;
+        border-radius: 0.5rem;
+        font-family: inherit;
+        font-weight: inherit;
+        color: inherit;
+        outline: none;
+        padding: 1.25rem;
+        background: #ffffff;
+        float: right;
+    }
+
+    .button2 {
+        display: block;
+        margin-left: auto;
+        padding: 0.75rem 2rem;
+        background-color: mediumpurple;
+        font-family: inherit;
+        font-weight: inherit;
+        border-radius: 0.5rem;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: bilo, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        float: right;
+        margin-bottom: 2rem;
+
+
+    }
+
+</style>
+
+<body>
+    <div>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#">Colkids.</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#goal">Our Goal</a>
+
+                </li>
+
+                <li class="nav-item">
+                    <a href="#testimonials">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn-primary"> <a href="#form" style="color: white">Get Started</a></button>
+
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+
+
+    <!-- Header -->
+    <div class="main">
+        <h2>An <span style="color: #FFC845"> Organization</span> working hard to make
+            education accessible by providing
+            Colombian children with new <span style="color: #FFC845"> opportunities</span>
+            and <span style="color: #FFC845"> skills </span>to grow.</h2>
+    </div>
+    <div class="date">
+        <p>2021</p>
+
+
+
+
+
+    </div>
+
+    <div class="about">
+        <div class="right"><iframe class=video width="660" height="415" src="https://www.youtube.com/embed/AsuB7DjOou0?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+
+
+        <div class="left">The Issue </div>
+
+    </div>
+
+
+
+
+
+    <div id="goal" class="goal">
+
+        <p><span style="color: #000000"> Our goal is to establish</span> poor and rural <span style="color: #000000"> communities in Colombia with</span> educational hubs <span style="color: #000000"> that provide access to education for kids. This includes having access to </span>  teachers, computers and books <span style="color: #000000"> while ensuring each child’s safety when they learn. </span> </p>
+
+    </div>
+
+    <div id="breakdown" class="breakdown">
+        <h3>The Break Down</h3>
+    </div>
+
+    <div class="wrapper-grid">
+        <div class="container">
+            <img src='img/school.png' alt='profile image' class="profile-img">
+            <p class="name">Resources and Materials </p>
+            <p class="description">20% of donations collected go towards providing kids with resources they can use for references as well as the basic materials each child needs in order to get started. </p>
+
+        </div>
+        <div class="container">
+            <img src='img/bus-2.png' alt='profile image' class="profile-img">
+            <p class="name">Student Transportation</p>
+            <p class="description">We work hard to make sure children can get to and from our facilities safely and with ease. 15% will go to providing student transportation so parents have one less thing to worry about with their children.</p>
+
+        </div>
+
+
+        <div class="container">
+            <img src='img/id-girl-with-glasses.png' alt='profile image' class="profile-img">
+            <p class="name">Hire staff and Professors</p>
+            <p class="description">We can have all the books and resources in the world but what good will come from it if there’s no one to teach all these children. 25% of your donations will be used to employ teachers and staff to keep facilities up to date and teach the curriculum. </p>
+        </div>
+        <div class="container">
+            <img src='img/building.png' alt='profile image' class="profile-img">
+            <p class="name">Infrastructure </p>
+            <p class="description">40% will be used as the base of our measures.
+                Creating a solid foundation will ensure the longevity of this organization for years to come.</p>
+
+        </div>
+
+
+
+    </div>
+
+    <div id="testimonials" class="change">Let's change their lives!</div>
+
+    <div class="wrapper-grid2">
+
+        <div class="container2">
+            <img src='img/photo-1607990283143-e81e7a2c9349.jpeg' alt='profile image' class="profile-img2">
+            <h1 class="name2">Luisa Gomez</h1>
+            <p class="description2">“I worry every day about the safety of my students. They have to go through very difficult paths in order to get to school, wich is something that needs to change for our kids to stay safe!”</p>
+
+        </div>
+
+        <div class="container2">
+            <img src='img/photo-1529421308418-eab98863cee4.jpeg' alt='profile image' class="profile-img2">
+            <h1 class="name2">Daniel Fernando</h1>
+            <p class="description2">“With a more accessible education many children would be able to leave poverty and violence behind”</p>
+
+        </div>
+
+        <div class="container2">
+            <img src='img/photo-1536337005238-94b997371b40.jpeg' alt='profile image' class="profile-img2">
+            <h1 class="name2">Hernando Ramirez</h1>
+            <p class="description2">“If I was able to get proper and a safe transportation to school. I wouldn’t worry labor how many hours I have to walk or the dangerous risks I could have during my journey to school”</p>
+        </div>
+    </div>
+
+
+    <div class="help">1.2 Million of Colombian children do not receive any formal
+        education! While children do not have access to education,
+        they are at high risk of being recruited into armed groups,
+        suffer sexual violence, exploitation, ending up in a cycle of
+        poverty and social exclusion.<br>
+        But you can help us change this!
+    </div>
+
+
+    <form id="form" class="form">
+        <img src='img/succes.png' alt='illustration' class="illustration">
+        <h1 class="form__title">Subscribe to our News Letter <br>
+            for future news! </h1>
+
+
+        <div class="form__group">
+            <input type="text" id="email" class="form__input" placeholder=" " autocomplete="off">
+            <label for="email" class="form__label">Email</label>
+        </div>
+
+
+
+
+        <button class="form__button" onclick="myFunction2()">Sign Up</button>
+
+        <script>
+            function myFunction2() {
+                var copyText = document.getElementById("myInput");
+                copyText.select();
+                copyText.setSelectionRange(0, 99999)
+                document.execCommand("copy");
+                alert("Thank you for Registering! ");
+            }
+
+        </script>
+    </form>
+   
+
+    <form action="" class="form2">
+        <h1 class="form__title2">Share this link with your family
+            And friends to <br>spread awareness! </h1>
+        <input type="text" class="link" value="https://www.ixd1306.firebird.sheridanc.on.ca/COLKIDS/" id="myInput">
+        
+       
+        <button class="button2" onclick="myFunction()">Copy link</button>
+
+        <script>
+            function myFunction() {
+                var copyText = document.getElementById("myInput");
+                copyText.select();
+                copyText.setSelectionRange(0, 99999)
+                document.execCommand("copy");
+                alert("Thank you! Link has been copied");
+            }
+      
+
+        </script>
+
+    </form>
+
+</body>
+
+</html>
